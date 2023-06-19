@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="information, links, share, trend, product, services"
+    />
+    <meta name="author" content="Plurg" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <link rel="icon" type="image/png" href="./assets/icons/plurg.png" />
+    <title>Plurg | Stay Informed</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container flex">
+        <div class="navbar_icon">
+          <h1><a href="index.html">Plurg</a></h1>
+          <img src="./assets/icons/plurg.png" alt="icon" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#explore" class="link">Explore</a></li>
+            <li><a href="policy.html" class="link">Policy</a></li>
+            <li><a href="#footer" class="link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="home">
+      <p class="home_para container">
+        Join other users and share relevant links and trending topics, install
+        extension now
+      </p>
+
+      <div class="download container">
+        <a
+          href="https://chrome.google.com/webstore/detail/plurg/okkckmldiolpfjignfpblddgmfbncpfl"
+          target="_blank"
+          >Download Extension</a
+        >
+      </div>
+    </section>
+
+    <section id="explore" class="explore container">
+      <h1>Explore</h1>
+      <div class="mid">
+        <div class="broad white_card">
+          <div class="broad_header">
+            <div class="publish">
+              <h3>Publish</h3>
+            </div>
+          </div>
+          <div class="broad_fields">
+            <div class="publish_container">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="inputs post_email"
+                autocomplete="on"
+                required
+              />
+              <h4 class="post_field_count">0/127</h4>
+              <textarea
+                type="text"
+                class="inputs post_desc"
+                rows="10"
+                placeholder="Write..."
+                maxlength="127"
+              ></textarea>
+              <p class="disclaimer">
+                Disclaimer: A small service fee of $0.99 is required to publish
+              </p>
+            </div>
+            <p>
+              By proceeding you agree to our
+              <a href="policy.html" target="_blank">terms &amp; policy</a>
+            </p>
+            <button class="popup_buttons proceed_btn">Proceed</button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="showcase">
+            <div class="showcase_header">
+              <h3>Showcase</h3>
+            </div>
+            <div class="items">
+              <img src="./assets/images/screen.png" alt="demo1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guide" class="guide container">
+      <h1 class="header">Guide</h1>
+      <ol>
+        <li>
+          <div>
+            <h3>Overview</h3>
+            <p>
+              Install extension now and connect with other users to share
+              relevant links and topics.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Get in touch</h3>
+            <p>
+              For more info, suggestions, reports and inquiries. send us a mail
+              @: <b>plurginc@gmail.com</b>
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <div id="popup_mail" class="overlay">
+      <div class="popup">
+        <h2>Contact Us</h2>
+        <a class="close" href="#contact">&times;</a>
+        <div class="details">
+          <p class="pop_msg">
+            Send us a mail for advert, suggestions, reports and for more
+            inquiries. mail: <b>plurginc@gmail.com</b>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup_msg" class="overlay">
+      <div class="popup">
+        <h2>Alert</h2>
+        <a class="close" href="#explore">&times;</a>
+        <div class="details">
+          <p class="pop_alert"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" id="footer">
+      <ul class="footer_links">
+        <li>
+          <a
+            href="https://twitter.com/ConfidenceDev"
+            target="_blank"
+            class="reach twitter"
+            ><img src="./assets/icons/twitter.png" class="twitter_img"
+          /></a>
+        </li>
+        <li>
+          <a href="#popup_mail" class="reach mail"
+            ><img src="./assets/icons/gmail.png"
+          /></a>
+        </li>
+      </ul>
+      <h3 class="copyright">Plurg &#169; 2023 copyright all rights reserved</h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
